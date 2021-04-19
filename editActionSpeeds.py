@@ -9,7 +9,7 @@ filename = 'action_space.json'
 # Run this script with desired parameters on the last line"
 
 
-def edit_action_space_speeds(edit_value, change_left_steering, change_straight, change_right_steering, add_indexer):
+def edit_action_speeds(edit_value, change_left_steering, change_straight, change_right_steering, add_indexer):
     with open(filename) as action_space:
         data = json.load(action_space)
         index_counter = 0
@@ -51,4 +51,9 @@ def action_update(action, edit_value):
 # 1st Parameter either a positive or negative value for editing all speeds the same value
 # 2nd/3rd/4th Parameter boolean for changing left(positive), straight or right steering angles
 # 5th Parameter is for adding index values
-edit_action_space_speeds(0.5, True, True, True, True)
+
+# EXAMPLE 1 - Add Speed of 0.5 to all actions, with updating index values
+edit_action_speeds(0.5, True, True, True, True)
+
+# EXAMPLE 2 - Minus Speed of 0.1 to all actions, with no change to index values
+# edit_action_speeds(-0.1, True, True, True, False)
