@@ -6,13 +6,13 @@ Run this script with desired parameters on the last line"
 
 
 1st Parameter either a positive or negative value for editing all speeds the same value
-2nd/3rd/4th Parameter boolean for changing left(positive), straight or right steering angles
-5th Parameter is for adding index values
+2nd/3rd Parameter boolean for changing left(positive) or right steering angles
+4th Parameter is for adding index values
 
 # Example 1 
-# Add Speed of 0.5 to all actions, with updating index values
-edit_action_speeds(0.5, True, True, True, True)
+# Add Speed of 0.01 to all actions, with updating index values
+edit_action_speeds(0.01, True, True, True)
 
 # Example 2 
 # Minus Speed of 0.1 to all actions, with no change to index values
-edit_action_speeds(-0.1, True, True, True, False)
+edit_action_speeds(-0.1, True, True, False)
