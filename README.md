@@ -9,6 +9,11 @@ Run this script with desired parameters on the last line"
 2nd/3rd Parameter boolean for changing left(positive) or right steering angles
 4th Parameter is for adding index values
 
+Change param values in script
+run "python updated_action_speeds.py"
+
+Ignore below for now
+
 # Example 1 
 # Add Speed of 0.01 to all actions, with updating index values
 edit_action_speeds(0.01, True, True, True)
@@ -16,5 +21,3 @@ edit_action_speeds(0.01, True, True, True)
 # Example 2 
 # Minus Speed of 0.1 to all actions, with no change to index values
 edit_action_speeds(-0.1, True, True, False)
-
-run "python updated_action_speeds.py"
