@@ -16,3 +16,5 @@ edit_action_speeds(0.01, True, True, True)
 # Example 2 
 # Minus Speed of 0.1 to all actions, with no change to index values
 edit_action_speeds(-0.1, True, True, False)
+
+run "python updated_action_speeds.py"
